@@ -1,1 +1,1220 @@
-{"metadata":{"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"name":"python","version":"3.10.13","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"},"learntools_metadata":{"lesson_index":0,"type":"exercise"},"kaggle":{"accelerator":"none","dataSources":[],"isInternetEnabled":false,"language":"python","sourceType":"notebook","isGpuEnabled":false}},"nbformat_minor":4,"nbformat":4,"cells":[{"cell_type":"markdown","source":"**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/hello-python).**\n\n---\n","metadata":{}},{"cell_type":"markdown","source":"Welcome to your first set of Python coding problems.  If this is your first time using Kaggle Notebooks, welcome! \n\nNotebooks are composed of blocks (called \"cells\") of text and code. Each of these is editable, though you'll mainly be editing the code cells to answer some questions.\n\nTo get started, try running the code cell below (by pressing the ► button, or clicking on the cell and pressing ctrl+enter on your keyboard).","metadata":{}},{"cell_type":"code","source":"print(\"You've successfully run some Python code\")\nprint(\"Congratulations!\")","metadata":{"execution":{"iopub.status.busy":"2024-05-13T17:45:58.432566Z","iopub.execute_input":"2024-05-13T17:45:58.433302Z","iopub.status.idle":"2024-05-13T17:45:58.470426Z","shell.execute_reply.started":"2024-05-13T17:45:58.433266Z","shell.execute_reply":"2024-05-13T17:45:58.469493Z"},"trusted":true},"execution_count":1,"outputs":[{"name":"stdout","text":"You've successfully run some Python code\nCongratulations!\n","output_type":"stream"}]},{"cell_type":"markdown","source":"Try adding another line of code in the cell above and re-running it. \n\nNow let's get a little fancier:  Add a new code cell by clicking on an existing code cell, hitting the escape key, and then hitting the `a` or `b` key.  The `a` key will add a cell above the current cell, and `b` adds a cell below.\n\nGreat! Now you know how to use Notebooks.\n\nEach hands-on exercise starts by setting up our feedback and code checking mechanism. Run the code cell below to do that. Then you'll be ready to move on to question 0.","metadata":{}},{"cell_type":"code","source":"from learntools.core import binder; binder.bind(globals())\nfrom learntools.python.ex1 import *\nprint(\"Setup complete! You're ready to start question 0.\")","metadata":{"_kg_hide-input":true,"_kg_hide-output":true,"execution":{"iopub.status.busy":"2024-05-13T17:46:03.549518Z","iopub.execute_input":"2024-05-13T17:46:03.550033Z","iopub.status.idle":"2024-05-13T17:46:04.054552Z","shell.execute_reply.started":"2024-05-13T17:46:03.549991Z","shell.execute_reply":"2024-05-13T17:46:04.053456Z"},"trusted":true},"execution_count":2,"outputs":[{"name":"stdout","text":"Setup complete! You're ready to start question 0.\n","output_type":"stream"}]},{"cell_type":"markdown","source":"# 0.\n\n*This is a silly question intended as an introduction to the format we use for hands-on exercises throughout all Kaggle courses.*\n\n**What is your favorite color? **\n\nTo complete this question, create a variable called `color` in the cell below with an appropriate value. The function call `q0.check()` (which we've already provided in the cell below) will check your answer.","metadata":{}},{"cell_type":"code","source":"# create a variable called color with an appropriate value on the line below\n# (Remember, strings in Python must be enclosed in 'single' or \"double\" quotes)\n____\ncolor='blue'\n# Check your answer\nq0.check()","metadata":{"execution":{"iopub.status.busy":"2024-05-13T17:46:46.595490Z","iopub.execute_input":"2024-05-13T17:46:46.596548Z","iopub.status.idle":"2024-05-13T17:46:46.605454Z","shell.execute_reply.started":"2024-05-13T17:46:46.596512Z","shell.execute_reply":"2024-05-13T17:46:46.604288Z"},"trusted":true},"execution_count":4,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Correct: What?! You got it right without needing a hint or anything? Drats. Well hey, you should still continue to the next step to get some practice asking for a hint and checking solutions. (Even though you obviously don't need any help here.)","text/markdown":"<span style=\"color:#33cc33\">Correct:</span> What?! You got it right without needing a hint or anything? Drats. Well hey, you should still continue to the next step to get some practice asking for a hint and checking solutions. (Even though you obviously don't need any help here.)"},"metadata":{}}]},{"cell_type":"markdown","source":"Didn't get the right answer? How do you not even know your own favorite color?!\n\nDelete the `#` in the line below to make one of the lines run. You can choose between getting a hint or the full answer by choosing which line to remove the `#` from. \n\nRemoving the `#` is called uncommenting, because it changes that line from a \"comment\" which Python doesn't run to code, which Python does run.","metadata":{}},{"cell_type":"code","source":"q0.hint()\nq0.solution()","metadata":{"execution":{"iopub.status.busy":"2024-02-27T07:43:55.432629Z","iopub.execute_input":"2024-02-27T07:43:55.432960Z","iopub.status.idle":"2024-02-27T07:43:55.446217Z","shell.execute_reply.started":"2024-02-27T07:43:55.432914Z","shell.execute_reply":"2024-02-27T07:43:55.445047Z"},"trusted":true},"execution_count":5,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Hint: Your favorite color rhymes with *glue*.","text/markdown":"<span style=\"color:#3366cc\">Hint:</span> Your favorite color rhymes with *glue*."},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Solution: \n```python\ncolor = \"blue\"\n```","text/markdown":"<span style=\"color:#33cc99\">Solution:</span> \n```python\ncolor = \"blue\"\n```"},"metadata":{}}]},{"cell_type":"markdown","source":"The upcoming questions work the same way. The only thing that will change are the question numbers. For the next question, you'll call `q1.check()`, `q1.hint()`, `q1.solution()`, for question 2, you'll call `q2.check()`, and so on.","metadata":{}},{"cell_type":"markdown","source":"<hr/>\n\n# 1.\n\nComplete the code below. In case it's helpful, here is the table of available arithmetic operations:\n\n\n\n| Operator     | Name           | Description                                            |\n|--------------|----------------|--------------------------------------------------------|\n| ``a + b``    | Addition       | Sum of ``a`` and ``b``                                 |\n| ``a - b``    | Subtraction    | Difference of ``a`` and ``b``                          |\n| ``a * b``    | Multiplication | Product of ``a`` and ``b``                             |\n| ``a / b``    | True division  | Quotient of ``a`` and ``b``                            |\n| ``a // b``   | Floor division | Quotient of ``a`` and ``b``, removing fractional parts |\n| ``a % b``    | Modulus        | Integer remainder after division of ``a`` by ``b``     |\n| ``a ** b``   | Exponentiation | ``a`` raised to the power of ``b``                     |\n| ``-a``       | Negation       | The negative of ``a``                                  |\n\n<span style=\"display:none\"></span>\n","metadata":{}},{"cell_type":"code","source":"pi = 3.14159 # approximate\ndiameter = 3\n\n# Create a variable called 'radius' equal to half the diameter\nradius=diameter/2\n\n# Create a variable called 'area', using the formula for the area of a circle: pi times the radius squared\narea=pi*radius**2\n\n# Check your answer\nq1.check()","metadata":{"execution":{"iopub.status.busy":"2024-05-13T17:47:03.646147Z","iopub.execute_input":"2024-05-13T17:47:03.646542Z","iopub.status.idle":"2024-05-13T17:47:03.656767Z","shell.execute_reply.started":"2024-05-13T17:47:03.646513Z","shell.execute_reply":"2024-05-13T17:47:03.655638Z"},"trusted":true},"execution_count":5,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_CircleArea\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Correct","text/markdown":"<span style=\"color:#33cc33\">Correct</span>"},"metadata":{}}]},{"cell_type":"code","source":"# Uncomment and run the lines below if you need help.\n#q1.hint()\n#q1.solution()","metadata":{},"execution_count":null,"outputs":[]},{"cell_type":"markdown","source":"<hr/>\n\n# 2.\n\nAdd code to the following cell to swap variables `a` and `b` (so that `a` refers to the object previously referred to by `b` and vice versa).","metadata":{}},{"cell_type":"code","source":"########### Setup code - don't touch this part ######################\n# If you're curious, these are examples of lists. We'll talk about \n# them in depth a few lessons from now. For now, just know that they're\n# yet another type of Python object, like int or float.\na = [1, 2, 3]\nb = [3, 2, 1]\nq2.store_original_ids()\n######################################################################\n\n# Your code goes here. Swap the values to which a and b refer.\nc=[]\nc=a\na=b\nb=c\n\n# If you get stuck, you can always uncomment one or both of the lines in\n# the next cell for a hint, or to peek at the solution.\n\n######################################################################\n\n# Check your answer\nq2.check()","metadata":{"execution":{"iopub.status.busy":"2024-05-13T17:48:52.191479Z","iopub.execute_input":"2024-05-13T17:48:52.191847Z","iopub.status.idle":"2024-05-13T17:48:52.202270Z","shell.execute_reply.started":"2024-05-13T17:48:52.191818Z","shell.execute_reply":"2024-05-13T17:48:52.200939Z"},"trusted":true},"execution_count":9,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Correct: \n\nThe most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n\n    tmp = a\n    a = b\n    b = tmp\n\nIf you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n\n    a, b = b, a\n\nWe'll demystify this bit of Python magic later when we talk about *tuples*.","text/markdown":"<span style=\"color:#33cc33\">Correct:</span> \n\nThe most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n\n    tmp = a\n    a = b\n    b = tmp\n\nIf you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n\n    a, b = b, a\n\nWe'll demystify this bit of Python magic later when we talk about *tuples*."},"metadata":{}}]},{"cell_type":"code","source":"q2.hint()","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:02:38.531241Z","iopub.execute_input":"2024-02-27T08:02:38.531558Z","iopub.status.idle":"2024-02-27T08:02:38.538256Z","shell.execute_reply.started":"2024-02-27T08:02:38.531536Z","shell.execute_reply":"2024-02-27T08:02:38.537438Z"},"trusted":true},"execution_count":13,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Hint: Try using a third variable.","text/markdown":"<span style=\"color:#3366cc\">Hint:</span> Try using a third variable."},"metadata":{}}]},{"cell_type":"code","source":"q2.solution()","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:03:01.509569Z","iopub.execute_input":"2024-02-27T08:03:01.509902Z","iopub.status.idle":"2024-02-27T08:03:01.518009Z","shell.execute_reply.started":"2024-02-27T08:03:01.509876Z","shell.execute_reply":"2024-02-27T08:03:01.516980Z"},"trusted":true},"execution_count":15,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Solution: The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n\n    tmp = a\n    a = b\n    b = tmp\n\nIf you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n\n    a, b = b, a\n\nWe'll demystify this bit of Python magic later when we talk about *tuples*.","text/markdown":"<span style=\"color:#33cc99\">Solution:</span> The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n\n    tmp = a\n    a = b\n    b = tmp\n\nIf you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n\n    a, b = b, a\n\nWe'll demystify this bit of Python magic later when we talk about *tuples*."},"metadata":{}}]},{"cell_type":"markdown","source":"<hr/>\n\n# 3a.\n\nAdd parentheses to the following expression so that it evaluates to 1.","metadata":{}},{"cell_type":"code","source":"(5 - 3) // 2","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:03:29.263649Z","iopub.execute_input":"2024-02-27T08:03:29.263938Z","iopub.status.idle":"2024-02-27T08:03:29.269218Z","shell.execute_reply.started":"2024-02-27T08:03:29.263905Z","shell.execute_reply":"2024-02-27T08:03:29.268467Z"},"trusted":true},"execution_count":16,"outputs":[{"execution_count":16,"output_type":"execute_result","data":{"text/plain":"1"},"metadata":{}}]},{"cell_type":"code","source":"#q3.a.hint()","metadata":{},"execution_count":null,"outputs":[]},{"cell_type":"code","source":"# Check your answer (Run this code cell to receive credit!)\nq3.a.solution()","metadata":{},"execution_count":null,"outputs":[]},{"cell_type":"markdown","source":"# 3b.  <span title=\"A bit spicy\" style=\"color: darkgreen \">🌶️</span>\n\n<small>Questions, like this one, marked a spicy pepper are a bit harder.</small>\n\nAdd parentheses to the following expression so that it evaluates to 0.","metadata":{}},{"cell_type":"code","source":"8 - 3 * 2 - (1 + 1)","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:04:35.054791Z","iopub.execute_input":"2024-02-27T08:04:35.055110Z","iopub.status.idle":"2024-02-27T08:04:35.061328Z","shell.execute_reply.started":"2024-02-27T08:04:35.055087Z","shell.execute_reply":"2024-02-27T08:04:35.060330Z"},"trusted":true},"execution_count":17,"outputs":[{"execution_count":17,"output_type":"execute_result","data":{"text/plain":"0"},"metadata":{}}]},{"cell_type":"code","source":"#q3.b.hint()","metadata":{},"execution_count":null,"outputs":[]},{"cell_type":"code","source":"# Check your answer (Run this code cell to receive credit!)\nq3.b.solution()","metadata":{},"execution_count":null,"outputs":[]},{"cell_type":"markdown","source":"<hr/>\n\n# 4. \nAlice, Bob and Carol have agreed to pool their Halloween candy and split it evenly among themselves.\nFor the sake of their friendship, any candies left over will be smashed. For example, if they collectively\nbring home 91 candies, they'll take 30 each and smash 1.\n\nWrite an arithmetic expression below to calculate how many candies they must smash for a given haul.","metadata":{}},{"cell_type":"code","source":"# Variables representing the number of candies collected by alice, bob, and carol\nalice_candies = 121\nbob_candies = 77\ncarol_candies = 109\n\n# Your code goes here! Replace the right-hand side of this assignment with an expression\n# involving alice_candies, bob_candies, and carol_candies\nto_smash = alice_candies+bob_candies+carol_candies%3\n\n# Check your answer\nq4.check()","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:08:42.994411Z","iopub.execute_input":"2024-02-27T08:08:42.994723Z","iopub.status.idle":"2024-02-27T08:08:43.001877Z","shell.execute_reply.started":"2024-02-27T08:08:42.994701Z","shell.execute_reply":"2024-02-27T08:08:43.001016Z"},"trusted":true},"execution_count":29,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 2, \"failureMessage\": \"Incorrect value for `to_smash`: `199`\", \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Incorrect: Incorrect value for `to_smash`: `199`","text/markdown":"<span style=\"color:#cc3333\">Incorrect:</span> Incorrect value for `to_smash`: `199`"},"metadata":{}}]},{"cell_type":"code","source":"q4.hint()\nq4.solution()","metadata":{"execution":{"iopub.status.busy":"2024-02-27T08:08:43.902027Z","iopub.execute_input":"2024-02-27T08:08:43.902337Z","iopub.status.idle":"2024-02-27T08:08:43.911752Z","shell.execute_reply.started":"2024-02-27T08:08:43.902315Z","shell.execute_reply":"2024-02-27T08:08:43.910967Z"},"trusted":true},"execution_count":30,"outputs":[{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Hint 1: You'll probably want to use the modulo operator, `%`.\n(For another hint, call `.hint(2)`)","text/markdown":"<span style=\"color:#3366cc\">Hint 1:</span> You'll probably want to use the modulo operator, `%`.\n(For another hint, call `.hint(2)`)"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"<IPython.core.display.Javascript object>","application/javascript":"parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"},"metadata":{}},{"output_type":"display_data","data":{"text/plain":"Solution: \n```python\n(alice_candies + bob_candies + carol_candies) % 3\n```","text/markdown":"<span style=\"color:#33cc99\">Solution:</span> \n```python\n(alice_candies + bob_candies + carol_candies) % 3\n```"},"metadata":{}}]},{"cell_type":"markdown","source":"# Keep Going\n\nNext up, you'll **[learn to write new functions and understand functions others write](https://www.kaggle.com/colinmorris/functions-and-getting-help)**. This will make you at least 10 times more productive as a Python programmer. ","metadata":{}},{"cell_type":"markdown","source":"---\n\n\n\n\n*Have questions or comments? Visit the [course discussion forum](https://www.kaggle.com/learn/python/discussion) to chat with other learners.*","metadata":{}}]}
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5e18ce38",
+   "metadata": {
+    "papermill": {
+     "duration": 0.00904,
+     "end_time": "2024-05-13T17:54:12.781340",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:12.772300",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**This notebook is an exercise in the [Python](https://www.kaggle.com/learn/python) course.  You can reference the tutorial at [this link](https://www.kaggle.com/colinmorris/hello-python).**\n",
+    "\n",
+    "---\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "713ee72e",
+   "metadata": {
+    "papermill": {
+     "duration": 0.008553,
+     "end_time": "2024-05-13T17:54:12.798649",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:12.790096",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "Welcome to your first set of Python coding problems.  If this is your first time using Kaggle Notebooks, welcome! \n",
+    "\n",
+    "Notebooks are composed of blocks (called \"cells\") of text and code. Each of these is editable, though you'll mainly be editing the code cells to answer some questions.\n",
+    "\n",
+    "To get started, try running the code cell below (by pressing the ► button, or clicking on the cell and pressing ctrl+enter on your keyboard)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b397dd30",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:12.817685Z",
+     "iopub.status.busy": "2024-05-13T17:54:12.817259Z",
+     "iopub.status.idle": "2024-05-13T17:54:12.831083Z",
+     "shell.execute_reply": "2024-05-13T17:54:12.830054Z"
+    },
+    "papermill": {
+     "duration": 0.026145,
+     "end_time": "2024-05-13T17:54:12.833288",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:12.807143",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You've successfully run some Python code\n",
+      "Congratulations!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"You've successfully run some Python code\")\n",
+    "print(\"Congratulations!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "99c797da",
+   "metadata": {
+    "papermill": {
+     "duration": 0.008444,
+     "end_time": "2024-05-13T17:54:12.850503",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:12.842059",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "Try adding another line of code in the cell above and re-running it. \n",
+    "\n",
+    "Now let's get a little fancier:  Add a new code cell by clicking on an existing code cell, hitting the escape key, and then hitting the `a` or `b` key.  The `a` key will add a cell above the current cell, and `b` adds a cell below.\n",
+    "\n",
+    "Great! Now you know how to use Notebooks.\n",
+    "\n",
+    "Each hands-on exercise starts by setting up our feedback and code checking mechanism. Run the code cell below to do that. Then you'll be ready to move on to question 0."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "9e008e52",
+   "metadata": {
+    "_kg_hide-input": true,
+    "_kg_hide-output": true,
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:12.869758Z",
+     "iopub.status.busy": "2024-05-13T17:54:12.869152Z",
+     "iopub.status.idle": "2024-05-13T17:54:13.766233Z",
+     "shell.execute_reply": "2024-05-13T17:54:13.765129Z"
+    },
+    "papermill": {
+     "duration": 0.910111,
+     "end_time": "2024-05-13T17:54:13.769333",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:12.859222",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Setup complete! You're ready to start question 0.\n"
+     ]
+    }
+   ],
+   "source": [
+    "from learntools.core import binder; binder.bind(globals())\n",
+    "from learntools.python.ex1 import *\n",
+    "print(\"Setup complete! You're ready to start question 0.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8eeadb53",
+   "metadata": {
+    "papermill": {
+     "duration": 0.009043,
+     "end_time": "2024-05-13T17:54:13.788113",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.779070",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 0.\n",
+    "\n",
+    "*This is a silly question intended as an introduction to the format we use for hands-on exercises throughout all Kaggle courses.*\n",
+    "\n",
+    "**What is your favorite color? **\n",
+    "\n",
+    "To complete this question, create a variable called `color` in the cell below with an appropriate value. The function call `q0.check()` (which we've already provided in the cell below) will check your answer."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "fad2d8b9",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:13.807731Z",
+     "iopub.status.busy": "2024-05-13T17:54:13.807191Z",
+     "iopub.status.idle": "2024-05-13T17:54:13.816556Z",
+     "shell.execute_reply": "2024-05-13T17:54:13.815800Z"
+    },
+    "papermill": {
+     "duration": 0.021589,
+     "end_time": "2024-05-13T17:54:13.818548",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.796959",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> What?! You got it right without needing a hint or anything? Drats. Well hey, you should still continue to the next step to get some practice asking for a hint and checking solutions. (Even though you obviously don't need any help here.)"
+      ],
+      "text/plain": [
+       "Correct: What?! You got it right without needing a hint or anything? Drats. Well hey, you should still continue to the next step to get some practice asking for a hint and checking solutions. (Even though you obviously don't need any help here.)"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "# create a variable called color with an appropriate value on the line below\n",
+    "# (Remember, strings in Python must be enclosed in 'single' or \"double\" quotes)\n",
+    "____\n",
+    "color='blue'\n",
+    "# Check your answer\n",
+    "q0.check()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3279b389",
+   "metadata": {
+    "papermill": {
+     "duration": 0.008901,
+     "end_time": "2024-05-13T17:54:13.836702",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.827801",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "Didn't get the right answer? How do you not even know your own favorite color?!\n",
+    "\n",
+    "Delete the `#` in the line below to make one of the lines run. You can choose between getting a hint or the full answer by choosing which line to remove the `#` from. \n",
+    "\n",
+    "Removing the `#` is called uncommenting, because it changes that line from a \"comment\" which Python doesn't run to code, which Python does run."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "972e3628",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:13.858275Z",
+     "iopub.status.busy": "2024-05-13T17:54:13.857495Z",
+     "iopub.status.idle": "2024-05-13T17:54:13.868387Z",
+     "shell.execute_reply": "2024-05-13T17:54:13.867449Z"
+    },
+    "papermill": {
+     "duration": 0.023708,
+     "end_time": "2024-05-13T17:54:13.870609",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.846901",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Your favorite color rhymes with *glue*."
+      ],
+      "text/plain": [
+       "Hint: Your favorite color rhymes with *glue*."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"0_ExerciseFormatTutorial\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "color = \"blue\"\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "color = \"blue\"\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "q0.hint()\n",
+    "q0.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fb9e8ba5",
+   "metadata": {
+    "papermill": {
+     "duration": 0.009937,
+     "end_time": "2024-05-13T17:54:13.890422",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.880485",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "The upcoming questions work the same way. The only thing that will change are the question numbers. For the next question, you'll call `q1.check()`, `q1.hint()`, `q1.solution()`, for question 2, you'll call `q2.check()`, and so on."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "db6c00ac",
+   "metadata": {
+    "papermill": {
+     "duration": 0.010069,
+     "end_time": "2024-05-13T17:54:13.910387",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.900318",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "<hr/>\n",
+    "\n",
+    "# 1.\n",
+    "\n",
+    "Complete the code below. In case it's helpful, here is the table of available arithmetic operations:\n",
+    "\n",
+    "\n",
+    "\n",
+    "| Operator     | Name           | Description                                            |\n",
+    "|--------------|----------------|--------------------------------------------------------|\n",
+    "| ``a + b``    | Addition       | Sum of ``a`` and ``b``                                 |\n",
+    "| ``a - b``    | Subtraction    | Difference of ``a`` and ``b``                          |\n",
+    "| ``a * b``    | Multiplication | Product of ``a`` and ``b``                             |\n",
+    "| ``a / b``    | True division  | Quotient of ``a`` and ``b``                            |\n",
+    "| ``a // b``   | Floor division | Quotient of ``a`` and ``b``, removing fractional parts |\n",
+    "| ``a % b``    | Modulus        | Integer remainder after division of ``a`` by ``b``     |\n",
+    "| ``a ** b``   | Exponentiation | ``a`` raised to the power of ``b``                     |\n",
+    "| ``-a``       | Negation       | The negative of ``a``                                  |\n",
+    "\n",
+    "<span style=\"display:none\"></span>\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "03566291",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:13.932563Z",
+     "iopub.status.busy": "2024-05-13T17:54:13.931911Z",
+     "iopub.status.idle": "2024-05-13T17:54:13.939875Z",
+     "shell.execute_reply": "2024-05-13T17:54:13.938953Z"
+    },
+    "papermill": {
+     "duration": 0.021492,
+     "end_time": "2024-05-13T17:54:13.942003",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.920511",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_CircleArea\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct</span>"
+      ],
+      "text/plain": [
+       "Correct"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "pi = 3.14159 # approximate\n",
+    "diameter = 3\n",
+    "\n",
+    "# Create a variable called 'radius' equal to half the diameter\n",
+    "radius=diameter/2\n",
+    "\n",
+    "# Create a variable called 'area', using the formula for the area of a circle: pi times the radius squared\n",
+    "area=pi*radius**2\n",
+    "\n",
+    "# Check your answer\n",
+    "q1.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "900350af",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:13.964797Z",
+     "iopub.status.busy": "2024-05-13T17:54:13.964115Z",
+     "iopub.status.idle": "2024-05-13T17:54:13.968048Z",
+     "shell.execute_reply": "2024-05-13T17:54:13.967042Z"
+    },
+    "papermill": {
+     "duration": 0.018036,
+     "end_time": "2024-05-13T17:54:13.970277",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.952241",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Uncomment and run the lines below if you need help.\n",
+    "#q1.hint()\n",
+    "#q1.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cfb63c7e",
+   "metadata": {
+    "papermill": {
+     "duration": 0.009941,
+     "end_time": "2024-05-13T17:54:13.990492",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:13.980551",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "<hr/>\n",
+    "\n",
+    "# 2.\n",
+    "\n",
+    "Add code to the following cell to swap variables `a` and `b` (so that `a` refers to the object previously referred to by `b` and vice versa)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "7eb600e5",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.013152Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.012558Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.021600Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.020811Z"
+    },
+    "papermill": {
+     "duration": 0.022876,
+     "end_time": "2024-05-13T17:54:14.023660",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.000784",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct:</span> \n",
+       "\n",
+       "The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n",
+       "\n",
+       "    tmp = a\n",
+       "    a = b\n",
+       "    b = tmp\n",
+       "\n",
+       "If you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n",
+       "\n",
+       "    a, b = b, a\n",
+       "\n",
+       "We'll demystify this bit of Python magic later when we talk about *tuples*."
+      ],
+      "text/plain": [
+       "Correct: \n",
+       "\n",
+       "The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n",
+       "\n",
+       "    tmp = a\n",
+       "    a = b\n",
+       "    b = tmp\n",
+       "\n",
+       "If you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n",
+       "\n",
+       "    a, b = b, a\n",
+       "\n",
+       "We'll demystify this bit of Python magic later when we talk about *tuples*."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "########### Setup code - don't touch this part ######################\n",
+    "# If you're curious, these are examples of lists. We'll talk about \n",
+    "# them in depth a few lessons from now. For now, just know that they're\n",
+    "# yet another type of Python object, like int or float.\n",
+    "a = [1, 2, 3]\n",
+    "b = [3, 2, 1]\n",
+    "q2.store_original_ids()\n",
+    "######################################################################\n",
+    "\n",
+    "# Your code goes here. Swap the values to which a and b refer.\n",
+    "c=[]\n",
+    "c=a\n",
+    "a=b\n",
+    "b=c\n",
+    "\n",
+    "# If you get stuck, you can always uncomment one or both of the lines in\n",
+    "# the next cell for a hint, or to peek at the solution.\n",
+    "\n",
+    "######################################################################\n",
+    "\n",
+    "# Check your answer\n",
+    "q2.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "3e3bf377",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.046912Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.046485Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.054681Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.053662Z"
+    },
+    "papermill": {
+     "duration": 0.022896,
+     "end_time": "2024-05-13T17:54:14.057061",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.034165",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Try using a third variable."
+      ],
+      "text/plain": [
+       "Hint: Try using a third variable."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "q2.hint()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6bbf69da",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.080761Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.080359Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.089272Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.088178Z"
+    },
+    "papermill": {
+     "duration": 0.023649,
+     "end_time": "2024-05-13T17:54:14.091728",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.068079",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"2_VariableSwap\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n",
+       "\n",
+       "    tmp = a\n",
+       "    a = b\n",
+       "    b = tmp\n",
+       "\n",
+       "If you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n",
+       "\n",
+       "    a, b = b, a\n",
+       "\n",
+       "We'll demystify this bit of Python magic later when we talk about *tuples*."
+      ],
+      "text/plain": [
+       "Solution: The most straightforward solution is to use a third variable to temporarily store one of the old values. e.g.:\n",
+       "\n",
+       "    tmp = a\n",
+       "    a = b\n",
+       "    b = tmp\n",
+       "\n",
+       "If you've read lots of Python code, you might have seen the following trick to swap two variables in one line:\n",
+       "\n",
+       "    a, b = b, a\n",
+       "\n",
+       "We'll demystify this bit of Python magic later when we talk about *tuples*."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "q2.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "06e0039c",
+   "metadata": {
+    "papermill": {
+     "duration": 0.010852,
+     "end_time": "2024-05-13T17:54:14.114074",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.103222",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "<hr/>\n",
+    "\n",
+    "# 3a.\n",
+    "\n",
+    "Add parentheses to the following expression so that it evaluates to 1."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "3e3a51f5",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.138734Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.137926Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.144096Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.143383Z"
+    },
+    "papermill": {
+     "duration": 0.021125,
+     "end_time": "2024-05-13T17:54:14.146354",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.125229",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(5 - 3) // 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "c117e7df",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.170268Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.169872Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.174354Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.173272Z"
+    },
+    "papermill": {
+     "duration": 0.01933,
+     "end_time": "2024-05-13T17:54:14.176767",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.157437",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "#q3.a.hint()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "d95a016d",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.201827Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.201446Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.209503Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.208436Z"
+    },
+    "papermill": {
+     "duration": 0.023421,
+     "end_time": "2024-05-13T17:54:14.211974",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.188553",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 4, \"questionId\": \"3.1_ArithmeticParensEasy\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "(5 - 3) // 2\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "(5 - 3) // 2\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "# Check your answer (Run this code cell to receive credit!)\n",
+    "q3.a.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2f1c8d69",
+   "metadata": {
+    "papermill": {
+     "duration": 0.011976,
+     "end_time": "2024-05-13T17:54:14.235449",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.223473",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# 3b.  <span title=\"A bit spicy\" style=\"color: darkgreen \">🌶️</span>\n",
+    "\n",
+    "<small>Questions, like this one, marked a spicy pepper are a bit harder.</small>\n",
+    "\n",
+    "Add parentheses to the following expression so that it evaluates to 0."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1341c2a4",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.261527Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.260906Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.267825Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.266672Z"
+    },
+    "papermill": {
+     "duration": 0.022514,
+     "end_time": "2024-05-13T17:54:14.269967",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.247453",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "8 - 3 * 2 - (1 + 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "1a56ddf2",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.296534Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.295923Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.300277Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.299463Z"
+    },
+    "papermill": {
+     "duration": 0.020237,
+     "end_time": "2024-05-13T17:54:14.302380",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.282143",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "#q3.b.hint()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "780e2a1f",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.328551Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.327941Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.336386Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.335338Z"
+    },
+    "papermill": {
+     "duration": 0.024101,
+     "end_time": "2024-05-13T17:54:14.338478",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.314377",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 4, \"questionId\": \"3.2_ArithmeticParensHard\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> `(8 - 3) * (2 - (1 + 1))` is one solution. There may be others."
+      ],
+      "text/plain": [
+       "Solution: `(8 - 3) * (2 - (1 + 1))` is one solution. There may be others."
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "# Check your answer (Run this code cell to receive credit!)\n",
+    "q3.b.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e538e9f3",
+   "metadata": {
+    "papermill": {
+     "duration": 0.012285,
+     "end_time": "2024-05-13T17:54:14.383454",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.371169",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "<hr/>\n",
+    "\n",
+    "# 4. \n",
+    "Alice, Bob and Carol have agreed to pool their Halloween candy and split it evenly among themselves.\n",
+    "For the sake of their friendship, any candies left over will be smashed. For example, if they collectively\n",
+    "bring home 91 candies, they'll take 30 each and smash 1.\n",
+    "\n",
+    "Write an arithmetic expression below to calculate how many candies they must smash for a given haul."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "321e5a15",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.410316Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.409923Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.419744Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.418675Z"
+    },
+    "papermill": {
+     "duration": 0.026055,
+     "end_time": "2024-05-13T17:54:14.422018",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.395963",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.25, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc33\">Correct</span>"
+      ],
+      "text/plain": [
+       "Correct"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "# Variables representing the number of candies collected by alice, bob, and carol\n",
+    "alice_candies = 121\n",
+    "bob_candies = 77\n",
+    "carol_candies = 109\n",
+    "\n",
+    "# Your code goes here! Replace the right-hand side of this assignment with an expression\n",
+    "# involving alice_candies, bob_candies, and carol_candies\n",
+    "to_smash = (alice_candies+bob_candies+carol_candies)%3\n",
+    "\n",
+    "# Check your answer\n",
+    "q4.check()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "59954e97",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-13T17:54:14.450257Z",
+     "iopub.status.busy": "2024-05-13T17:54:14.449348Z",
+     "iopub.status.idle": "2024-05-13T17:54:14.462907Z",
+     "shell.execute_reply": "2024-05-13T17:54:14.461812Z"
+    },
+    "papermill": {
+     "duration": 0.030089,
+     "end_time": "2024-05-13T17:54:14.465045",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.434956",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint 1:</span> You'll probably want to use the modulo operator, `%`.\n",
+       "(For another hint, call `.hint(2)`)"
+      ],
+      "text/plain": [
+       "Hint 1: You'll probably want to use the modulo operator, `%`.\n",
+       "(For another hint, call `.hint(2)`)"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"4_CandySplitting\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "(alice_candies + bob_candies + carol_candies) % 3\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "(alice_candies + bob_candies + carol_candies) % 3\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "q4.hint()\n",
+    "q4.solution()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5af1cc8b",
+   "metadata": {
+    "papermill": {
+     "duration": 0.013676,
+     "end_time": "2024-05-13T17:54:14.492775",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.479099",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# Keep Going\n",
+    "\n",
+    "Next up, you'll **[learn to write new functions and understand functions others write](https://www.kaggle.com/colinmorris/functions-and-getting-help)**. This will make you at least 10 times more productive as a Python programmer. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bbad56f9",
+   "metadata": {
+    "papermill": {
+     "duration": 0.013436,
+     "end_time": "2024-05-13T17:54:14.519804",
+     "exception": false,
+     "start_time": "2024-05-13T17:54:14.506368",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "---\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "*Have questions or comments? Visit the [course discussion forum](https://www.kaggle.com/learn/python/discussion) to chat with other learners.*"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [],
+   "isGpuEnabled": false,
+   "isInternetEnabled": false,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "learntools_metadata": {
+   "lesson_index": 0,
+   "type": "exercise"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 5.097608,
+   "end_time": "2024-05-13T17:54:14.953083",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-05-13T17:54:09.855475",
+   "version": "2.5.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
